@@ -1,6 +1,35 @@
 # star-feedback
 I did a lot of digging around the net, and couldn’t find any simple feedback system which uses AJAX and PHP to do your job in a second. So, for everyone out there who wants a simple feedback system from their site users, I hope this comes in handy.
 
+## The Demo
+
+[You can find the demo here](http://aekansh.in/examples/starfeedback.php?who=53).
+
+## How to use?
+
+1. Clone this repository.
+2. Place the `ratingsForm` code wherever you want to display the feedback stars.
+3. Import **star_feedback.css** file inside the header of your HTML page.
+4. Import **star_feedback.js** file at the end of the body of your HTML page.
+5. Place **stars.png** in the same directory as your HTML file.
+6. Replace/Add your mySQL database credentials to the **feedback_backend.php** script file by either importing your own **dbconnect.php** by using `include_once("dbconnect.php");` or defining them separately inside the script.
+7. Use the **create_tables.sql** file to create a separate table for feedback mechanism. Please ensure that a ``users`` tables already exists and that ``users.user_id`` is a valid column.
+
+That's it, you're done. Enjoy!
+
+## Credits
+
+This wouldn't be possible without:
+
+* [Paul Shan](http://voidcanvas.com/make-simple-star-rating-by-radio-buttons-using-css/)
+* [Daniel Eden](https://daneden.github.io/animate.css/)
+
+Usage: You're free to use this code as you like, as long as you credit the above mentioned people (and me!) somewhere in your code or on your website. :)
+
+## The Tutorial
+
+**Note: This tutorial is a part of The AD Blog hosted at [http://aekansh.in/](http://aekansh.in/official_blog/tutorials/website-tutorials/ajax-php-based-simple-feedback-system/)**
+
 Okay, so first of all, let me tell you what you NEED to know. To be honest, you can just get away with copy-pasting the codes I’ll be providing you with and the system will work just fine, but to really understand the stuff that’s happening, you’ll need to know [HTML5](http://www.w3schools.com/html/html5_intro.asp), [JAVASCRIPT](http://www.w3schools.com/js/default.asp), [JQUERY](http://www.w3schools.com/jquery/) (particularly [AJAX](http://api.jquery.com/jquery.ajax/)), [PHP](http://www.w3schools.com/php/) and a bit of [CSS](http://www.w3schools.com/css/).
 
 So, let’s get started. We’ll do the database first, since that’s easy – ya know. So go ahead, create a new table called “ratings” with 4 columns – rating_id (INT[size 11] AUTO_INCREAMENT NOT_NULL PRIMARY), rating (INT[size 5] NOT_NULL), feedback (TEXT NULL), by_user (INT INDEX NOT_NULL).
