@@ -12,7 +12,7 @@
     <title>AJAX based Feedback Example | Aekansh Dixit</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="http://aekansh.in/C/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -20,7 +20,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="star_feedback.css" rel="stylesheet">
-    <link href="http://aekansh.in/C/vendors/animatecss/animate.css" rel="stylesheet">
+    <link href="https://daneden.github.io/animate.css/animate.min.css" rel="stylesheet">
     </head>
 
   <body>
@@ -60,7 +60,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://aekansh.in/C/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="star_feedback.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
