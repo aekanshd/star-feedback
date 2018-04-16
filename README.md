@@ -10,7 +10,12 @@ I did a lot of digging around the net, and couldn’t find any simple feedback s
 1. Clone this repository.
 2. Place the `ratingsForm` code (found inside the **star_feedback.php** file) wherever you want to display the feedback stars.
 3. Import **star_feedback.css** file inside the header of your HTML page.
-4. Import **star_feedback.js** file at the end of the body of your HTML page.
+4. Import **animate.css** by using this code:
+
+   ```HTML
+   <link href="https://daneden.github.io/animate.css/animate.min.css" rel="stylesheet">
+   ```
+5. Import **star_feedback.js** file at the end of the body of your HTML page.
 6. Create a script tag after importing the **star_feedback.js** and place this code:
   
    ```JavaScript
@@ -323,7 +328,7 @@ Our back-end script will generate a JSON response which will then be read by the
 Technically, that’s it! But, to add more “decoration” go ahead and add this file to head of the page which uses the feedback!
 
 ```HTML
-<link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
+<link href="https://daneden.github.io/animate.css/animate.min.css" rel="stylesheet">
 ```
 This is just to add the animations! If this doesn’t work, you can go ahead the download the file from [here](https://daneden.github.io/animate.css/), and make sure import the file onto the page correctly!
 
