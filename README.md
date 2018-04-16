@@ -182,7 +182,7 @@ form .stars span {
 }
 ```
 
-But wait, you still can’t see the stars! Hmm… what happened? It’s because of the “star.png” file which you do not have! Make sure you insert [this image](http://www.voidcanvas.com/demo/4029star-rating/stars.png) in the same directory as the css file! (just right click, and save the image!)
+But wait, you still can’t see the stars! Hmm… what happened? It’s because of the “star.png” file which you do not have! Make sure you insert [this image](https://raw.githubusercontent.com/aekanshd/star-feedback/master/stars.png) in the same directory as the css file! (just right click, and save the image!)
 
 Now, you can see your stars! Yay! But how will you make the rating actually work? Well, for that we’ll need a bit of JQuery and a bit of PHP. So, let’s get to it!
 
