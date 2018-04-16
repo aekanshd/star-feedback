@@ -52,7 +52,7 @@
       </div>
 
            <br><Br><center><h3>Note: This is a demo. Your ratings will not be actually stored!</h3><br>This is a demo for the post <a target="_blank" href="http://aekansh.in/official_blog/tutorials/ajax-php-based-simple-feedback-system/">Simple AJAX Feedback</a> made on Aekansh's official blog. All rights reserved.
-           <br><br><a href="starfeedback.php">Restart the demo</a> | View <a href="backend_source.php" target="_blank">Back-end</a> source.</center></div>
+           <br><br><a href="star_feedback.php">Restart the demo</a> | View <a href="backend_source.php" target="_blank">Back-end</a> source.</center></div>
     <!-- /.container -->
 
 
