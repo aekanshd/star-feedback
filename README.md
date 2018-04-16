@@ -8,12 +8,22 @@ I did a lot of digging around the net, and couldn’t find any simple feedback s
 ## How to use?
 
 1. Clone this repository.
-2. Place the `ratingsForm` code (found inside the **star_feedback.html** file) wherever you want to display the feedback stars.
+2. Place the `ratingsForm` code (found inside the **star_feedback.php** file) wherever you want to display the feedback stars.
 3. Import **star_feedback.css** file inside the header of your HTML page.
 4. Import **star_feedback.js** file at the end of the body of your HTML page.
-5. Place **stars.png** in the same directory as your HTML file.
-6. Replace/Add your mySQL database credentials to the **feedback_backend.php** script file by either importing your own **dbconnect.php** by using `include_once("dbconnect.php");` or defining them separately inside the script.
-7. Use the **create_tables.sql** file to create a separate table for feedback mechanism. Please ensure that a ``users`` tables already exists and that ``users.user_id`` is a valid column.
+6. Create a script tag after importing the **star_feedback.js** and place this code:
+  
+   ```JavaScript
+   $(document).ready(function() {
+      	starFeedback(<?php echo '"' . $_GET['who'] . '"'; ?>);
+       });
+   ```
+       
+   The ``starFeedback(string userID)`` takes a string as its parameter. Find a way to pass the userID as a string (ex: "1","52",etc) or just pass a "who" parameter in the URL query (like: "starfeedback.php?who=52") and use a PHP echo script to pass it through the function as shown above. 
+
+7. Place **stars.png** in the same directory as your HTML file.
+8. Replace/Add your mySQL database credentials to the **feedback_backend.php** script file by either importing your own **dbconnect.php** by using `include_once("dbconnect.php");` or defining them separately inside the script.
+9. Use the **create_tables.sql** file to create a separate table for feedback mechanism. Please ensure that a ``users`` tables already exists and that ``users.user_id`` is a valid column.
 
 That's it, you're done. Enjoy!
 
